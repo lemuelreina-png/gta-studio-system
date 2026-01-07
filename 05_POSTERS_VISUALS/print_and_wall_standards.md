@@ -25,5 +25,5 @@ Wall Logic:
 - Eye level = principles
 - Workstation level = process reminders
 - Entry wall = culture & identity
-
+Document wall poster source-of-truth and standards
 Walls teach before people do.
