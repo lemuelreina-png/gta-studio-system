@@ -22,7 +22,7 @@ Document any irregularities, feedback, or reflections from the day here:
 
 - [ ] ________________________________________________________
 - [ ] ________________________________________________________
-
+02_OPERATIONS/DAILY_SHOP_OPEN_CLOSE_CHECKLIST.md
 #### Reflection Prompt
 - **What went well today? What can be improved for tomorrow?**
 
