@@ -29,3 +29,15 @@ Rules:
 - Version increases only when the source system changes
 - Posters without a version stamp are invalid
 - Outdated posters must be removed immediately
+## Monthly Poster Audit (Pi Standard)
+
+Frequency:
+- Once per month
+
+Audit Steps:
+1. Verify poster version stamp matches Git
+2. Scan QR and confirm correct source file opens
+3. If mismatch exists, poster is removed or reprinted
+
+Rule:
+Outdated posters are removed, not debated.
