@@ -12,6 +12,6 @@ These rules govern all front desk interactions.
 3. A $65 deposit is mandatory to secure bookings.
 
 4. Every interaction must resolve to a single next step:
-   Book, Deposit, Call, Message, or Email.
+   Book, Deposit, Call, Message, or Email
 
 These rules exist to reduce friction, prevent time loss, and maintain professional control.
