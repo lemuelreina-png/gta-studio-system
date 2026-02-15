@@ -1,0 +1,32 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum DepositStatus {
+  NOT_PAID
+  PAID
+  PARTIAL
+}
+
+model Intake {
+  id                 Int           @id @default(autoincrement())
+  clientName         String
+  phone              String?
+  email              String?
+  instagram          String?
+  designSummary      String
+  placement          String
+  sizeEstimate       String?
+  appointmentDate    DateTime?
+  appointmentTime    String?
+  depositStatus      DepositStatus @default(NOT_PAID)
+  depositAmount      Float?
+  notes              String?
+  referenceImagePath String?
+  createdAt          DateTime      @default(now())
+}
