@@ -12,6 +12,33 @@ Practicing Improvement through structure, consistency, and documentation.
 - **Apprenticeship Training & Evaluations** – Structured growth programs
 - **Visual Standards & Posters** – Consistent communication materials
 - **Client Systems and Growth Strategy** – Booking and deposit protocols
+- **Client Intake Web App** – Next.js + Prisma intake and admin workflow
+
+## Client Intake Web App
+A Next.js App Router + TypeScript app has been added to manage tattoo client intake submissions, image references, and admin review.
+
+### Stack
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Prisma ORM
+- SQLite
+
+### Setup
+```bash
+npm install
+npx prisma migrate dev
+npm run dev
+```
+
+### Routes
+- `/` → intake form
+- `/admin` → intake list
+- `/admin/[id]` → intake detail page
+- `/admin/[id]/print` → print-ready sheet
+- `POST /api/intakes` → create intake
+- `GET /api/intakes` → list intakes
+- `POST /api/upload` → upload reference image to `public/uploads`
 
 ## Front Desk AI System
 This repository controls the Get That Art LLC front desk automation, booking flow, and $65 deposit enforcement using Pi rules.
