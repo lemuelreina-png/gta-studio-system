@@ -15,3 +15,93 @@ textarea {
 label {
   @apply text-sm font-medium text-slate-700;
 }
+
+.workspace {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 16px;
+  background: #0a0f1e;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.screen {
+  width: 1280px;
+  height: 800px;
+  background: linear-gradient(135deg, #0d1b2a 0%, #1a2744 100%);
+  position: relative;
+  border: 2px solid #1e3a5f;
+  overflow: hidden;
+}
+
+.topbar {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 50px;
+  background: #111827;
+  border-bottom: 1px solid #1e3a5f;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  gap: 12px;
+}
+
+.ticker-badge { background: #1e3a5f; color: #fff; font-weight: 700; font-size: 14px; padding: 4px 10px; border-radius: 4px; }
+.price-display { color: #fff; font-size: 14px; font-weight: 600; }
+.price-change { color: #22c55e; font-size: 12px; }
+.market-status { margin-left: auto; color: #f59e0b; font-size: 12px; font-weight: 600; border: 1px solid #f59e0b; padding: 3px 10px; border-radius: 12px; }
+
+.toolbar {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 50px;
+  bottom: 60px;
+  background: #111827;
+  border-right: 1px solid #1e3a5f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  gap: 6px;
+}
+.tool-btn { width: 34px; height: 34px; background: #1e3a5f; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: #8fb3d9; font-size: 14px; cursor: pointer; }
+.tool-btn:hover { background: #2563eb; color: #fff; }
+
+.drawtoolsbar { position: absolute; top: 50px; left: 50px; right: 0; height: 36px; background: #111827; border-bottom: 1px solid #1e3a5f; display: flex; align-items: center; padding: 0 10px; gap: 8px; }
+.draw-btn { color: #8fb3d9; font-size: 13px; padding: 2px 6px; border-radius: 3px; cursor: pointer; }
+.draw-btn:hover { background: #1e3a5f; color: #fff; }
+.draw-sep { width: 1px; height: 20px; background: #1e3a5f; margin: 0 4px; }
+
+.chart-area { position: absolute; top: 86px; left: 50px; right: 70px; bottom: 180px; background: #0d1b2a; overflow: hidden; }
+.grid-h { position: absolute; left: 0; right: 0; height: 1px; background: rgb(255 255 255 / 5%); }
+
+.price-scale {
+  position: absolute;
+  top: 86px;
+  right: 0;
+  width: 70px;
+  bottom: 180px;
+  background: #111827;
+  border-left: 1px solid #1e3a5f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 5px;
+}
+.price-tick { color: #8fb3d9; font-size: 11px; text-align: right; }
+.price-tick.current { color: #fff; background: #ef4444; padding: 2px 4px; border-radius: 2px; text-align: center; }
+
+.time-axis { position: absolute; left: 50px; right: 70px; height: 30px; bottom: 150px; background: #111827; border-top: 1px solid #1e3a5f; display: flex; align-items: center; padding: 0 20px; gap: 60px; }
+.time-tick { color: #8fb3d9; font-size: 11px; }
+
+.time-quick { position: absolute; bottom: 110px; left: 50px; right: 70px; height: 36px; background: #111827; border-top: 1px solid #1e3a5f; display: flex; align-items: center; padding: 0 15px; gap: 6px; }
+.tq-btn { color: #8fb3d9; font-size: 12px; padding: 3px 8px; border-radius: 3px; cursor: pointer; font-weight: 600; }
+.tq-btn:hover, .tq-btn.active { background: #2563eb; color: #fff; }
+
+.interval-bar { position: absolute; bottom: 65px; left: 50px; right: 70px; height: 40px; background: #111827; border-top: 1px solid #1e3a5f; display: flex; align-items: center; padding: 0 15px; gap: 10px; }
+.interval-select { background: #1e3a5f; color: #fff; border: 1px solid #3b82f6; padding: 4px 12px; border-radius: 4px; font-size: 12px; font-weight: 600; }
+
+.indicator-pane { position: absolute; bottom: 0; left: 50px; right: 70px; height: 60px; background: #090f1a; border-top: 2px solid #1e3a5f; }
+.indicator-label { color: #6b7280; font-size: 11px; padding: 5px 10px; }
