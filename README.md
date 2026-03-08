@@ -14,6 +14,10 @@ Practicing Improvement through structure, consistency, and documentation.
 - **Client Systems and Growth Strategy** – Booking and deposit protocols
 - **Client Intake Web App** – Next.js + Prisma intake and admin workflow
 
+
+## Live Deployment
+- Production URL: https://6bebb044-8be2-4aab-bf3b-58d2366341be-00-3eep90wphj677.riker.replit.dev/
+
 ## Client Intake Web App
 A Next.js App Router + TypeScript app has been added to manage tattoo client intake submissions, image references, and admin review.
 
